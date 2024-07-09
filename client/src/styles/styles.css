@@ -1,7 +1,4 @@
-body{
-	font-family: 'Dela Gothic One';
-	display: flex;
-}
+
 .nav-link{
     color: #8700E3; 
 	font-size: 12px;	
@@ -9,6 +6,7 @@ body{
 .head-text {
     font-size: 64px;
     font-weight: 400;
+	text-align: center;
     background: linear-gradient( #4D00F0,  #8700E3 );
     color: transparent;
     background-clip: text;
@@ -31,10 +29,10 @@ body{
     justify-content: space-around;
 }
 #about{
-	background-image: url('../images/sun.png');
+	/* background-image: url('../images/sun.png');
 	background-repeat: no-repeat;
 	background-size: auto;
-	background-position: 0% 25%;
+	background-position: 0% 25%; */
 }
 .about_info{
     justify-content: space-between;
@@ -59,13 +57,14 @@ body{
 #training{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: center;
 	flex-wrap: wrap;
 	margin-top: 50px;
 }
 .training-list{
 	width: 586px;
 	color: black;
+	margin: 50px;
 }
 .rectangle{
 	width: 100%;

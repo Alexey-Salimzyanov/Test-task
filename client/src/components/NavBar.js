@@ -6,7 +6,7 @@ import logo from '../images/logo.png';
 const NavBar = () =>{
   return (
     <>
-      <Navbar bg="white" style={{position: 'fixed', top: 0, width: '100%'}}>
+      <Navbar bg="white" style={{position: 'fixed', top: 0, width: '100%',fontFamily: 'Dela Gothic One'}}>
           <Nav className='navbar'>
             <Navbar.Brand>
                   <Image src={logo} alt="Logo" width="51" height="64"  /> 
