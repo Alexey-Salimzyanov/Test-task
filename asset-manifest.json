@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Test-task/client/static/css/main.3cbea908.css",
-    "main.js": "/Test-task/client/static/js/main.8501c9fa.js",
-    "static/media/picture.png": "/Test-task/client/static/media/picture.f08e0a168b367d38c6e2.png",
-    "static/media/logo.png": "/Test-task/client/static/media/logo.839a71c9b1e574a5e067.png",
-    "static/media/sun.png": "/Test-task/client/static/media/sun.960b76c248b3bdbdfd12.png",
-    "static/media/logo_sibsutis_2.png": "/Test-task/client/static/media/logo_sibsutis_2.0e38a71df066754afb4c.png",
-    "index.html": "/Test-task/client/index.html",
-    "main.3cbea908.css.map": "/Test-task/client/static/css/main.3cbea908.css.map",
-    "main.8501c9fa.js.map": "/Test-task/client/static/js/main.8501c9fa.js.map"
+    "main.css": "/Test-task/static/css/main.3cbea908.css",
+    "main.js": "/Test-task/static/js/main.1eb739a8.js",
+    "static/media/picture.png": "/Test-task/static/media/picture.f08e0a168b367d38c6e2.png",
+    "static/media/logo.png": "/Test-task/static/media/logo.839a71c9b1e574a5e067.png",
+    "static/media/sun.png": "/Test-task/static/media/sun.960b76c248b3bdbdfd12.png",
+    "static/media/logo_sibsutis_2.png": "/Test-task/static/media/logo_sibsutis_2.0e38a71df066754afb4c.png",
+    "index.html": "/Test-task/index.html",
+    "main.3cbea908.css.map": "/Test-task/static/css/main.3cbea908.css.map",
+    "main.1eb739a8.js.map": "/Test-task/static/js/main.1eb739a8.js.map"
   },
   "entrypoints": [
     "static/css/main.3cbea908.css",
-    "static/js/main.8501c9fa.js"
+    "static/js/main.1eb739a8.js"
   ]
 }
