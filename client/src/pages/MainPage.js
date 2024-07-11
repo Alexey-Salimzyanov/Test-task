@@ -40,18 +40,25 @@ const MainPage =  () =>{
 			<div style={{marginTop:'150px',fontFamily: 'Dela Gothic One'}} >
 			<div id="about"  style={{scrollMarginTop:'150px'}} class="container-fluid">
 			<div>
-				<div class="d-flex justify-content-center">
-					<div className="d-flex flex-column align-items-center justify-content-center" style={{backgroundImage: `url(${sun})`, backgroundPosition: 'left', backgroundRepeat: 'no-repeat'}}>
+				<div class="d-flex justify-content-center flex-wrap">
+					<div className="d-flex flex-column align-items-center justify-content-center" style={{
+						backgroundImage: `url(${sun})`, 
+						backgroundPosition: 'left', 
+						backgroundRepeat: 'no-repeat', 
+						backgroundSize: '57%', 
+						width:'700px',
+						marginBottom:'50px' 
+					}}>
 						<label className="head-text">ЛЕТНЯЯ ШКОЛА СибГУТИ-2024</label>			
 						<MyButton text="зарегистрироваться"/>
 					</div>
-					<Image src={picture} alt="picture" /> 		
+					<Image src={picture} alt="picture"  className="img-fluid"/> 		
 				</div>
 			</div>
-				<Container className="mt-5 d-flex flex-row about_info container-fluid">
-					<div>25-28 ИЮНЯ<span>даты проведения</span></div>
-					<div>5 ДНЕЙ<span>длительность смены</span></div>
-					<div>15-18 ЛЕТ<span>возраст участников</span></div>
+				<Container className="mt-5 d-flex flex-row flex-wrap justify-content-around about_info container-fluid">
+					<div className="mt-3">25-28 ИЮНЯ<span>даты проведения</span></div>
+					<div className="mt-3">5 ДНЕЙ<span>длительность смены</span></div>
+					<div className="mt-3">15-18 ЛЕТ<span>возраст участников</span></div>
 				</Container>
 			</div>
 
@@ -78,8 +85,9 @@ const MainPage =  () =>{
 			</div>
 
 			<div style={{marginTop:'100px',scrollMarginTop:'100px'}} id="program" className="d-flex flex-column align-items-center">
-			<p style={{textAlign:'center', fontSize: '48px', fontWeight: 400, color:'#4D00F0'}}>ПРОГРАММА</p>
-			<div  className="program-content">		
+			<p className="program-header">ПРОГРАММА</p>
+			<div  className="program-content">
+
 				<ProgramCard 
 				bgColor="linear-gradient(#6B2CC5, #4D00F0)" 
 				title="Экспертное мнение" 
@@ -108,48 +116,45 @@ const MainPage =  () =>{
 			</div>
 				<MyButton text="СМОТРЕТЬ ЛЕТО В ТЕЛЕКОМЕ"/>
 			</div>
-
 			<Container className="mt-5">
 				<p className="header">Дополнительные баллы при поступлении в СибГУТИ</p>
 				<div style={{color:'black'}} class="d-flex">
-				<Image src={loupe} alt="Loupe" style={{objectFit:'contain',marginRight:'20px'}}/> 
-				<ul>
-					<li style={{marginBottom: '20px', fontSize: '32px'}}>Участники посещают все мероприятия школы и получают баллы (очки) за работу. Набрав по итогам  Летней школы наибольшее число баллов, можно получить дипломы I, II и III степени.</li>
-					<li style={{marginBottom: '20px', fontSize: '32px'}}>Дипломы I, II и III места могут быть учтены в качестве индивидуальных достижений при поступлении на направления подготовки СибГУТИ.</li>
+				<Image src={loupe} className="d-none d-lg-block" alt="Loupe"  style={{objectFit:'contain',marginRight:'20px'}}/> 
+				<ul className="program-list">
+					<li style={{marginBottom: '20px'}}>Участники посещают все мероприятия школы и получают баллы (очки) за работу. Набрав по итогам  Летней школы наибольшее число баллов, можно получить дипломы I, II и III степени.</li>
+					<li style={{marginBottom: '20px'}}>Дипломы I, II и III места могут быть учтены в качестве индивидуальных достижений при поступлении на направления подготовки СибГУТИ.</li>
 				</ul>
 				</div>
 			</Container>
 
-			<div id="AccomodationAndFood" className="d-flex align-items-center justify-content-center" style={{scrollMarginTop:'100px'}}>
-			<div>
+			<div id="AccomodationAndFood" className="d-flex align-items-center justify-content-center flex-wrap" style={{scrollMarginTop:'100px'}}>
+	
 				<AFCard
 				number="1"
 				text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus magna sapien, imperdiet id malesuada eu, lacinia non augue. Vivamus id metus id risus scelerisque consectetur. Duis at rhoncus sapien, nec convallis mi. Mauris efficitur aliquam ipsum et sodales. Phasellus sit."
 				title="ПРОЖИВАНИЕ"
 				image={house}
 				/>
-			</div>
-			<div>
+		
 				<AFCard
 				number="2"
 				text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus magna sapien, imperdiet id malesuada eu, lacinia non augue. Vivamus id metus id risus scelerisque consectetur. Duis at rhoncus sapien, nec convallis mi. Mauris efficitur aliquam ipsum et sodales. Phasellus sit."
 				title="ПИТАНИЕ"
 				image={plate}
 				/>
-			</div>
-			<div>
+			
 				<AFCard
 				number="3"
 				text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus magna sapien, imperdiet id malesuada eu, lacinia non augue. Vivamus id metus id risus scelerisque consectetur. Duis at rhoncus sapien, nec convallis mi. Mauris efficitur aliquam ipsum et sodales. Phasellus sit."
 				title="ПРОЕЗД"
 				image={car}
 				/>
-			</div>
+		
 			</div>
 
 			<Container id="HowToEnroll" style={{scrollMarginTop:'100px'}}>
-				<p className="header">Как участвовать?</p>
-				<p style={{color:'black', fontSize:'32px'}}>
+				<h2 className="header">Как участвовать?</h2>
+				<p>
 				Участником Летней школы СибГУТИ может стать выпускник 9 или 10 класса средней школы.
 				<br/><br/>
 				Необходимо подать заявку на участие, заполнив анкету 
@@ -160,10 +165,12 @@ const MainPage =  () =>{
 				</p>
 				<Link className="link">Положение о Летней школе СибГУТИ «Лето в телекоме»</Link>
 				<br/>
-				<Link className="link">Информационное письмо</Link>
-				<p className="header">Задать вопрос</p>
+				<Link className="link">Информационное письмо</Link>				
+			</Container>
+			
+			<p className="header">Задать вопрос</p>
 				<div class="d-flex flex-column justify-content-center align-items-center">
-					<div >
+					<div>
 						<p className="input-header">EMAIL</p>
 						<input type="text" value={email} onChange={(event)=>handleEmailChange(event)} style={{height:'42px'}}></input>
 					</div>
@@ -174,25 +181,25 @@ const MainPage =  () =>{
 					<MyButton text="ЗАДАТЬ ВОПРОС" handler={handleClick}/>
 				</div>
 
-
-			</Container>
 			<p className="header" id="cost" style={{scrollMarginTop:'100px'}}>СТОИМОСТЬ</p>
-			<div class="d-flex justify-content-center" style={{textAlign:'center'}}>	
-				<div style={{width:'358px', margin:'10px 60px'}}>
+			<div class="d-flex justify-content-around" style={{textAlign:'center'}}>
+				<div></div>	
+				<div style={{width:'358px', margin:'10px'}}>
 					<p className="header">8000 РУБ.</p>
 					<p className="common-text">При ранней регистрации с 01.04.2024 по 31.05.2024</p>
 				</div>
-				<div style={{width:'358px', margin:'10px 60px'}}>
+				<div style={{width:'358px', margin:'10px'}}>
 					<p className="header">10000 РУБ.</p>
 					<p className="common-text">При поздней регистрации с 01.06.2024 по 20.06.2024</p>
 				</div>
+				<div></div>
 			</div>
 			<Container className="common-text" style={{marginTop:'50px'}}>В течение 10 рабочих дней после получения официального приглашения и подписания договора участия в ЛШ, участниками ЛШ (родителями или законными представителями) производится оплата организационного взноса. В случае отсутствия оплаты в обозначенный срок, право получить приглашение в ЛШ переходит к участнику, следующему по рейтингу.</Container>
 			</div>
 		</main>
 
 		<footer>
-			<div id="contacts" class="container-fluid" style={{scrollMarginTop:'100px'}}>
+			<div id="contacts" class="container-fluid d-flex flex-wrap" style={{scrollMarginTop:'100px'}}>
 				<Image src={logo2} /> 
 				<div>
 					<Link style={{color:'white'}}>КОНТАКТЫ</Link>

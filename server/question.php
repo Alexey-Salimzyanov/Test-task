@@ -8,11 +8,20 @@ class Question
     private $email;
     private $question;
 
+
     public function __construct($pdo)
     {
         $this->conn = $pdo;
-    }
 
+        $query = "CREATE TABLE IF NOT EXISTS " . $this->table_name . " (
+            id SERIAL PRIMARY KEY,
+            email VARCHAR(50) NOT NULL,
+            question TEXT NOT NULL
+        )";
+
+        $stmt = $this->conn->prepare($query);
+        $stmt->execute();
+    }
     public function getId()
     {
         return $this->id;

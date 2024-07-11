@@ -7,8 +7,9 @@ header("Access-Control-Allow-Methods:  GET");
 
 include_once "./db.php";
 include_once "./question.php";
+include_once "./config.php";
 
-$database = new Database();
+$database = new Database($dbms, $host, $db, $user, $pass);
 $pdo = $database->dbConnection();
 
 $question_object = new Question($pdo);

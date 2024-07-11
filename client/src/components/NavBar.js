@@ -6,14 +6,14 @@ import logo from '../images/logo.png';
 const NavBar = () =>{
   return (
     <>
-      <Navbar bg="white" style={{position: 'fixed', top: 0, width: '100%',fontFamily: 'Dela Gothic One'}}>
-          <Nav className='navbar'>
-            <Navbar.Brand>
-                  <Image src={logo} alt="Logo" width="51" height="64"  /> 
-                  </Navbar.Brand>
+      <Navbar bg="white" style={{position: 'fixed', top: 0,fontFamily: 'Dela Gothic One'}}>
+           <Navbar.Brand style={{margin:'10px'}}>
+              <Image src={logo} alt="Logo" width="51" height="64"  /> 
+            </Navbar.Brand>
+            <Nav class="navbar navbar-scroll">    
             <Nav.Link href="#about">О ШКОЛЕ</Nav.Link>
-                  <Nav.Link href="#training">ОБУЧЕНИЕ</Nav.Link>
-                  <Nav.Link href="#program">ПРЕДМЕТЫ И ТЕМЫ</Nav.Link>
+            <Nav.Link href="#training">ОБУЧЕНИЕ</Nav.Link>
+            <Nav.Link href="#program">ПРЕДМЕТЫ И ТЕМЫ</Nav.Link>
             <Nav.Link href="#AccomodationAndFood">ПРОЖИВАНИЕ И ПИТАНИЕ</Nav.Link>
             <Nav.Link href="#HowToEnroll">КАК ПОСТУПИТЬ</Nav.Link>
             <Nav.Link href="#cost">СТОИМОСТЬ</Nav.Link>

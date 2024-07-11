@@ -6,8 +6,9 @@ header("Access-Control-Allow-Methods: DELETE");
 
 include_once "./db.php";
 include_once "./question.php";
+include_once "./config.php";
 
-$database = new Database();
+$database = new Database($dbms, $host, $db, $user, $pass);
 $pdo = $database->dbConnection();
 
 $question = new Question($pdo);
